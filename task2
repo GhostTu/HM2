@@ -1,0 +1,23 @@
+/*7. Дефинирайте променливи със стойност 24 212,
+-1 357 674, 1 357 674, 1 357
+674 000, 3 657 895 000.
+Изведете всяка променлива на екрана със printf()*/
+
+#include <stdio.h>
+
+int main()
+{
+    unsigned short int a = 24212;
+    printf("signed short int a = %hd\n", a);
+    signed long int b =-1357674;
+    printf("signed long int b = %ld\n", b);
+    signed long int c = 1357674;
+    printf("unsigned long int c = %li\n", c);
+    unsigned long int d = 1357674000;
+    printf("unsigned long int d = %lu\n", d);
+    unsigned long int e =3657895000;
+    printf("unsigned long int e = %lu\n", e);
+
+    return 0;
+
+}
