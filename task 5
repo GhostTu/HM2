@@ -1,0 +1,67 @@
+/*10. Представете си, че имате фирма за отдаване на каравани и кемпери под
+наем, за която трябва да разработите софтуер. Вие сте малка фирма и имате
+общо 3 каравани на цена 90 лв. на ден и 3 кемпера на цена 100 лв. на ден.
+Декларирайте променливи за броя на караваните, цената на караваните, броя на
+кемперите и цената им. Направете меню, което пита клиента каравана или
+кемпер ще иска. Направете променлива, в която да се събират парите, които
+клиента дължи на компанията. Принтирайте резултата.*/
+
+#include <stdio.h>
+
+int main()
+{
+    int cemp = 0, carav = 0, pricePerCarav = 90, pricePerCemp = 100, choice = 0, day =0;
+    float money = 0.0;
+
+        printf("What do you prefer: 1-Cemper or 2-Caravan\n");
+        scanf("%d", &choice); 
+
+    if (choice == 1)
+    {
+        printf("How many cempers do you want to book?\n");
+        printf("There are avaliable only three:\n");
+       
+    
+    do {
+         scanf("%d", &choice);
+    if (choice == 1 || choice == 2 || choice == 3)
+    {
+        printf("How may days do you want to stay:\n");
+        scanf("%d", &day);
+        money=choice*day*pricePerCemp;
+        printf("You have to pay %.2f BGN", money );
+        break;
+    }else {
+        printf("There are only three please choose again.\n");
+        printf("How many cempers do you want to book?\n");
+
+    }
+
+    } while(choice != 0 );
+}
+    if (choice == 2)
+    {
+        printf("How many Caravans do you want to book?\n");
+        printf("There are avaliable only three:\n");
+       
+    do {
+         scanf("%d", &choice);
+    if (choice == 1 || choice == 2 || choice == 3)
+    {
+        printf("How may days do you want to stay:\n");
+        scanf("%d", &day);
+        money=choice*day*pricePerCemp;
+        printf("You have to pay %.2f BGN", money );
+        break;
+    }else {
+        printf("There are only three please choose again.\n");
+        printf("How many cempers do you want to book?\n");
+
+    }
+
+    } while(choice != 0 );
+
+}
+    
+    return 0;
+}
