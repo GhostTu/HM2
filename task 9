@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+//2) Какъв ще бъде резултата от следната операция: а = а ^ a; ?
+
+int main()
+{
+    int a=0;
+    printf("enter one number: ");
+    scanf("%d", &a);
+    printf("Your number is a= %d\n", a);
+    //a XOR a
+    a=a^a;
+    printf("a^a = %d", a);
+    return 0;
+}
