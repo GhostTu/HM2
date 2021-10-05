@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+/*6. Дефинирайте променливи със стойност
+127, 255, 63 498, 4 294 967 292, 9 000
+000 000 000 775 845.
+Изведете всяка променлива на екрана със printf() */
+
+int main()
+{
+    signed char a = 127;
+    printf("signed char a = %c\n", a);
+    unsigned char b = 255;
+    printf("unsigned char b = %c\n", b);
+    unsigned int c = 63498;
+    printf("unsigned int c = %u\n", c);
+    unsigned long int d = 4294967292;
+    printf("unsigned long int d = %lu\n", d);
+    signed long long int e =9000000000000775845;
+    printf("signed long long int e= %lli\n", e);
+
+}
