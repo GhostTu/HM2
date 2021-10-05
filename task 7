@@ -1,0 +1,12 @@
+/*Упражнение 14. Напишете програма, която изчислява броя на секундите в една
+година.*/
+
+#include <stdio.h>
+
+int main()
+{
+    int sec =0 , year = 1;
+    year=365*24*60*60;
+    printf("One year has %d seconds", year);
+    return 0;
+}
